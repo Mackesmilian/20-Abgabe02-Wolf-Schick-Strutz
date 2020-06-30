@@ -39,10 +39,9 @@ public class StringQueue implements IQueue {
     @Override
     public String remove() {
         String element = poll();
-        element = "";
-        if (element == null)
+        if (elements.size() == 0)
             throw new NoSuchElementException("there's no element any more");
-
+        elements.remove(0);
         return element;
     }
     @Override

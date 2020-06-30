@@ -11,10 +11,12 @@ class StringQueueTest {
 
     @BeforeEach
     public void setup(){
-        queue = new StringQueue(0);
+        queue = new StringQueue(2);
     }
     @Test
     public void testConstructor(){
+        assertTrue(queue.offer("1st"));
+        assertTrue(queue.offer("1st"));
         assertFalse(queue.offer("1st"));
     }
 
