@@ -12,10 +12,10 @@ coverage. In doing so we will update this repository and the task list.
 
 # Task List
 
-- [ ] Invite collaborators
-- [ ] Create basic project structure
-- [ ] Add provided code
-- [ ] Create basic project structure
+- [x] Invite collaborators
+- [x] Create basic project structure
+- [x] Add provided code
+- [x] Create basic project structure
 - [ ] Find first mistake
 - [ ] Find second mistake
 - [ ] Find third mistake
