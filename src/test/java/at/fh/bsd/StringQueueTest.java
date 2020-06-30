@@ -8,16 +8,20 @@ import org.junit.jupiter.api.Test;
 
 class StringQueueTest {
     static StringQueue queue;
+    static StringQueue offerTest;
 
     @BeforeEach
     public void setup(){
-        queue = new StringQueue(2);
+        queue = new StringQueue(0);
+        offerTest = new StringQueue(2);
     }
     @Test
     public void testConstructor(){
-        assertTrue(queue.offer("1st"));
-        assertTrue(queue.offer("1st"));
         assertFalse(queue.offer("1st"));
+    }
+    @Test
+    public void testOffer(){
+        assertTrue(offerTest.offer("1st,2nd"));
     }
 
 }
