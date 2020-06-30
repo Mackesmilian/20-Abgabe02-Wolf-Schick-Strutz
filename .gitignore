@@ -39,3 +39,13 @@ Thumbs.db
 .idea/
 
 target/maven-status/maven-compiler-plugin/compile/default-compile/
+
+target/javadoc-bundle-options/
+
+target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/
+
+target/site/css/
+
+target/site/
+
+target/surefire-reports/

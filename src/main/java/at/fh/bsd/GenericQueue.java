@@ -9,6 +9,9 @@ public class GenericQueue implements IQueue<Object> {
     private List<Object> elements = new ArrayList<>();
     private int maxSize;
 
+    public GenericQueue(int maxSize) {
+        this.maxSize = maxSize;
+    }
 
     @Override
     public boolean offer(Object obj) {
@@ -57,4 +60,5 @@ public class GenericQueue implements IQueue<Object> {
         }
         return element;
     }
+
 }

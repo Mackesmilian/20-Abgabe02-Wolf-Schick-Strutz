@@ -2,13 +2,12 @@ package at.fh.bsd;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.BeforeClass;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.NoSuchElementException;
 
-class StringQueueTest {
+public class StringQueueTest {
     static StringQueue queue;
     static StringQueue offerTest;
 
@@ -17,12 +16,10 @@ class StringQueueTest {
         queue = new StringQueue(0);
         offerTest = new StringQueue(1);
     }
-    @Test
-    public void testConstructor(){
-        assertFalse(queue.offer("1st"));
-    }
+
     @Test
     public void testOffer(){
+        assertFalse(queue.offer("1st"));
         assertTrue(offerTest.offer("1st"));
     }
     @Test
