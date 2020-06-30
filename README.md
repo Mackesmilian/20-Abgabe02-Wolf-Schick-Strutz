@@ -16,6 +16,6 @@ coverage. In doing so we will update this repository and the task list.
 - [x] Create basic project structure
 - [x] Add provided code
 - [x] Create basic project structure
-- [ ] Find first mistake
+- [x] Find first mistake
 - [ ] Find second mistake
 - [ ] Find third mistake
