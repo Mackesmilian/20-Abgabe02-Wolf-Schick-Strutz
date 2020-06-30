@@ -8,11 +8,15 @@ import java.util.NoSuchElementException;
 // there are different Bugs, wrong implementation, typos, ...
 // write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
 
-public class StringQueue implements IQueue {
+public class StringQueue implements IQueue<String> {
 
     private List<String> elements = new ArrayList<String>();
     private int maxSize;
 
+    /**
+     * Constructor for StringQueue
+     * @param maxSize determines the maximum size for the queue
+     */
     public StringQueue(int maxSize) { //typo here in maxSize; was maxsize
         this.maxSize = maxSize;
     }
