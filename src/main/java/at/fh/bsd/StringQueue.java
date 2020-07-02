@@ -15,12 +15,20 @@ public class StringQueue implements IQueue<String> {
 
     /**
      * Constructor for StringQueue
+     * Makes a new GenericQueue object with initialisation of an integer.
+     *
      * @param maxSize determines the maximum size for the queue
      */
     public StringQueue(int maxSize) { //typo here in maxSize; was maxsize
         this.maxSize = maxSize;
     }
 
+    /**
+     * If you call this function it returns a boolean if the size of the list is not equal the maxSize.
+     *
+     * @param obj the object given the method
+     * @return returns a boolean; true if the object was successfully added, false if not
+     */
     @Override
     public boolean offer(String obj) {
         if (elements.size() != maxSize)
@@ -31,6 +39,12 @@ public class StringQueue implements IQueue<String> {
         return true;
     }
 
+    /**
+     * Gets the first object in the list then deletes it and returns the value, if not null.
+     * If the list is of size 0 this method returns 0 and deletes nothing.
+     *
+     * @return the object that stands first in the list which got deleted or null
+     */
     @Override
     public String poll() {
         String element = peek();
@@ -40,6 +54,13 @@ public class StringQueue implements IQueue<String> {
         elements.remove(0);
         return element;
     }
+
+    /**
+     * Removes the first object by calling poll() if the list is not of size 0.
+     * If the list size is 0 there will be thrown an exception.
+     *
+     * @return calls the poll() method to delete and returns the object that got deleted
+     */
     @Override
     public String remove() {
         if (elements.size() == 0)
@@ -47,6 +68,12 @@ public class StringQueue implements IQueue<String> {
         //elements.remove(0);
         return poll();
     }
+
+    /**
+     * If the list is bigger then 0 the method returns the first object, otherwise returns null.
+     *
+     * @return the first element in the list or null
+     */
     @Override
     public String peek() {
         String element;
@@ -57,6 +84,13 @@ public class StringQueue implements IQueue<String> {
 
         return element;
     }
+
+    /**
+     * Gets the first element in the list if the element is not null.
+     * If the element is null there will be thrown an exception.
+     *
+     * @return the first element in the list
+     */
     @Override
     public String element() {
         String element = peek();
