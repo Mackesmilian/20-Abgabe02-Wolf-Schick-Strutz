@@ -17,8 +17,15 @@ coverage. In doing so we will update this repository and the task list.
 - [x] Add provided code
 - [x] Create basic project structure
 - [x] Find first mistake
-- [ ] Find second mistake
-- [ ] Find third mistake
+- [x] Find second mistake
+- [x] Find third mistake
+- [x] Finish all implementations
+- [x] Finish test classes
+- [ ] Finish JavaDoc comments
+- [x] Maven Targets clean, validate, compile, test no errors/warnings
+- [ ] Finish Maven Site Documentation
+- [ ] Finish Lab Report
+- [ ] Add Avatars to pom.xml
 
 # Requirements
 
