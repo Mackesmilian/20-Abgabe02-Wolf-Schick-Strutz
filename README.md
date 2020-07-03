@@ -21,11 +21,11 @@ coverage. In doing so we will update this repository and the task list.
 - [x] Find third mistake
 - [x] Finish all implementations
 - [x] Finish test classes
-- [ ] Finish JavaDoc comments
+- [x] Finish JavaDoc comments
 - [x] Maven Targets clean, validate, compile, test no errors/warnings
-- [ ] Finish Maven Site Documentation
-- [ ] Finish Lab Report
-- [ ] Add Avatars to pom.xml
+- [x] Finish Maven Site Documentation
+- [x] Finish Lab Report
+- [x] Add Avatars to pom.xml
 
 # Requirements
 
@@ -34,4 +34,3 @@ coverage. In doing so we will update this repository and the task list.
 * Correct code so that it runs (find three mistakes)
 * Create a generic queue implementation
 * Implement tests for all classes - 100% coverage
-* 
