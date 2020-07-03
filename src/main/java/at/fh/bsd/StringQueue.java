@@ -65,7 +65,6 @@ public class StringQueue implements IQueue<String> {
     public String remove() {
         if (elements.size() == 0)
             throw new NoSuchElementException("there's no element any more");
-        //elements.remove(0);
         return poll();
     }
 
