@@ -29,7 +29,7 @@ public class GenericQueueIntTest {
      *
      * assertFalse: fails when returning true
      * tests is successful when the offer function does not add the given integer to the queue
-     * because ???
+     * because it was has already reached the maxSize
      */
     @Test
     public void testOffer(){
